@@ -1,0 +1,16 @@
+{
+  "results": {
+    "passed": [
+      {
+        "status": "success",
+        "test_scenario_name": "test_getBalanceWithInterest"
+      },
+      {
+        "status": "success",
+        "test_scenario_name": "test_getSimpleInterest"
+      }
+    ],
+    "failed": []
+  },
+  "time_taken": 0.0
+}
