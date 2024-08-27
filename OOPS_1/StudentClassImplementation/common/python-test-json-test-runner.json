@@ -1,0 +1,12 @@
+{
+  "results": {
+    "passed": [
+      {
+        "status": "success",
+        "test_scenario_name": "test_init"
+      }
+    ],
+    "failed": []
+  },
+  "time_taken": 0.0
+}
