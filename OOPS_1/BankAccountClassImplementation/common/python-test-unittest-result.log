@@ -1,0 +1,7 @@
+test_getBalanceWithInterest (testBankAccount.TestBankAccount) ... ok
+test_getSimpleInterest (testBankAccount.TestBankAccount) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
