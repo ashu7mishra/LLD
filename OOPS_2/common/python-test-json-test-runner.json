@@ -1,0 +1,24 @@
+{
+  "results": {
+    "passed": [
+      {
+        "status": "success",
+        "test_scenario_name": "test_constructor_with_coordinates"
+      },
+      {
+        "status": "success",
+        "test_scenario_name": "test_constructor_with_invalid_arguments"
+      },
+      {
+        "status": "success",
+        "test_scenario_name": "test_constructor_with_points"
+      },
+      {
+        "status": "success",
+        "test_scenario_name": "test_constructor_with_rectangle"
+      }
+    ],
+    "failed": []
+  },
+  "time_taken": 0.0
+}

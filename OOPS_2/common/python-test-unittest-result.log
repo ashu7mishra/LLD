@@ -1,0 +1,9 @@
+test_constructor_with_coordinates (testRectangle.TestRectangle) ... ok
+test_constructor_with_invalid_arguments (testRectangle.TestRectangle) ... ok
+test_constructor_with_points (testRectangle.TestRectangle) ... ok
+test_constructor_with_rectangle (testRectangle.TestRectangle) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
