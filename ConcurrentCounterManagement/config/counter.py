@@ -4,19 +4,23 @@ import threading
 class Counter:
     def __init__(self, initial_count):
         # code here
-        self.initial_count = initial_count
+        self._count = initial_count
+        self._lock = threading.Lock()
 
     def incValue(self, offset):
         # TODO: method to increase the value of counter by `offset`
-        self.initial_count += offset
+        with self._lock:
+            self._count += offset
 
     def getValue(self):
         # TODO: method to get the current value of counter by
-        return self.initial_count
+        with self._lock:
+            return self._count
 
     def decValue(self, offset):
         # TODO: method to decrease the value of counter by `offset`
-        self.initial_count -= offset
+        with self._lock:
+            self._count -= offset
 
 
 
@@ -33,7 +37,7 @@ def concurrent_dec(counter, offset):
 
 
 # Create a Counter instance with initial value 0
-counter = Counter(0)
+counter = Counter(10)
 
 # Create and start multiple threads for concurrent increment and decrement
 threads = []
@@ -48,7 +52,6 @@ for _ in range(10):
 # TODO: Wait for all threads to complete
 for thread in threads:
     # code here
-    # thread.start()
     thread.join()
 
 # Check the final value of the counter
