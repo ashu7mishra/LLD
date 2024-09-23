@@ -8,6 +8,14 @@ def find_unique_persons(people):
     # TODO: Implement the logic to find unique persons based on their names.
     # If there are multiple persons with the same name, only include the first
     # person encountered with that name in the returned list.
+    unique_people = []
+    unique_names = []
+    for person in people:
+        if person.name not in unique_names:
+            unique_names.append(person.name)
+            unique_people.append(person)
+    
+    return unique_people
 
 
 # Example usage:
