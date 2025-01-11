@@ -1,0 +1,2 @@
+class InvalidPlayerSizeException(Exception):
+    pass
