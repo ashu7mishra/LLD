@@ -1,18 +1,21 @@
+from typing import List
 from Parking_Lot.src.models.floor import Floor
 from Parking_Lot.src.models.gate import Gate
+from Parking_Lot.src.models.parking_lot_status import ParkingLotStatus
+from Parking_Lot.src.models.slot_assignment_strategy_enum import SlotAssignmentStrategyEnum
+from Parking_Lot.src.models.vehicle_type import VehicleType
 
 
 class ParkingLot:
-    def __init__(self):
-        self.id = None
-        self.name = None
-        self.address = None
-        self.capacity = None
-        self.floor = Floor
-        self.entry_gate = Gate()
-        self.exit_gate = Gate()
-        self.timing = None
-        self.allowed_vehicle_type = None
-        self.status = None
-        self.fee_calculation_strategy = None
-        self.slot_picking_strategy = None
+    def __init__(self, id:int, name:str, address:str, parking_floors:List[Floor], gates:List[Gate],
+                 allowed_vehicles:List[VehicleType], capacity:int, status:ParkingLotStatus,
+                 slot_assignment_strategy:SlotAssignmentStrategyEnum):
+        super().__init__(id)
+        self.name = name
+        self.address = address
+        self.parking_floors = parking_floors
+        self.gates = gates
+        self.allowed_vehicles = allowed_vehicles
+        self.capacity = capacity
+        self.status = status
+        self.slot_assignment_strategy = slot_assignment_strategy

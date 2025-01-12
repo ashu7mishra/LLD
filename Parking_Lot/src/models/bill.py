@@ -1,9 +1,16 @@
-class Bill:
+from datetime import datetime
+from typing import List
+from Parking_Lot.src.models.base_model import BaseModel
+from Parking_Lot.src.models.bill_status import BillStatus
 
-    def __init__(self):
-        self.id = None
-        self.exit_date_time = None
-        self.total_amount = None
-        self.ticket = None
-        self.gate = None
-        self.status = None
+
+class Bill(BaseModel):
+
+    def __init__(self, id:int, exit_time:datetime, token, exited_at, payments:List, total_amount:int, bill_status:BillStatus):
+        super().__init__(id)
+        self.exit_time = exit_time
+        self.token = token
+        self.exited_at = exited_at
+        self.payments = payments
+        self.total_amount = total_amount
+        self.bill_status = bill_status
