@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List
 from Parking_Lot.src.models.base_model import BaseModel
-from Parking_Lot.src.models.bill_status import BillStatus
+from Parking_Lot.src.models.status.bill_status import BillStatus
 
 
 class Bill(BaseModel):

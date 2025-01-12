@@ -1,5 +1,5 @@
-from Parking_Lot.src.models.slot_status import SlotStatus
-from Parking_Lot.src.models.vehicle_type import VehicleType
+from Parking_Lot.src.models.status.slot_status import SlotStatus
+from Parking_Lot.src.models.enum_types.vehicle_type import VehicleType
 
 
 class Slot:

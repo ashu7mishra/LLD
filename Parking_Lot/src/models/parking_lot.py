@@ -1,9 +1,9 @@
 from typing import List
 from Parking_Lot.src.models.floor import Floor
 from Parking_Lot.src.models.gate import Gate
-from Parking_Lot.src.models.parking_lot_status import ParkingLotStatus
-from Parking_Lot.src.models.slot_assignment_strategy_enum import SlotAssignmentStrategyEnum
-from Parking_Lot.src.models.vehicle_type import VehicleType
+from Parking_Lot.src.models.status.parking_lot_status import ParkingLotStatus
+from Parking_Lot.src.models.enum_types.slot_assignment_strategy_enum import SlotAssignmentStrategyEnum
+from Parking_Lot.src.models.enum_types.vehicle_type import VehicleType
 
 
 class ParkingLot:

@@ -1,7 +1,7 @@
 from datetime import datetime
 from Parking_Lot.src.models.base_model import BaseModel
-from Parking_Lot.src.models.payment_mode import PaymentMode
-from Parking_Lot.src.models.payment_status import PaymentStatus
+from Parking_Lot.src.models.enum_types.payment_mode import PaymentMode
+from Parking_Lot.src.models.status.payment_status import PaymentStatus
 
 
 class Payment(BaseModel):

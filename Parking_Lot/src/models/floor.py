@@ -1,8 +1,8 @@
 from typing import List
 
 from Parking_Lot.src.models.base_model import BaseModel
-from Parking_Lot.src.models.floor_status import FloorStatus
-from Parking_Lot.src.models.vehicle_type import VehicleType
+from Parking_Lot.src.models.status.floor_status import FloorStatus
+from Parking_Lot.src.models.enum_types.vehicle_type import VehicleType
 
 
 class Floor(BaseModel):

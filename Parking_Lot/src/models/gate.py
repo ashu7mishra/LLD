@@ -1,6 +1,6 @@
 from Parking_Lot.src.models.base_model import BaseModel
-from Parking_Lot.src.models.gate_status import GateStatus
-from Parking_Lot.src.models.gate_type import GateType
+from Parking_Lot.src.models.status.gate_status import GateStatus
+from Parking_Lot.src.models.enum_types.gate_type import GateType
 
 
 class Gate(BaseModel):
