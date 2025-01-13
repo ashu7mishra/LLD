@@ -1,5 +1,5 @@
-from Parking_Lot.dtos.issueTokenRequest import IssueTokenRequest
-from Parking_Lot.dtos.ticket_response import TicketResponse
+from Parking_Lot.src.dtos.issueTokenRequest import IssueTokenRequest
+from Parking_Lot.src.dtos.ticket_response import TicketResponse
 
 
 class TicketController:
