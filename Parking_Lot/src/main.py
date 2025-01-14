@@ -28,3 +28,5 @@ if __name__ == '__main__':
     response = ticket_controller.issue_ticket(request)
 
     print(response.ticket_id)
+
+    # BILL CONTROLLER, BILL SERVICE, BILL REPO
