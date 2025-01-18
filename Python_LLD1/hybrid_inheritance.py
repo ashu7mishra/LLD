@@ -21,7 +21,14 @@ class Child(Parent):
         super().display(3)
         print("Child display")
 
+class GrandChild1(Child):
+    pass
 
-c = Child(10)
-c.display()
-print(c.age, c.eyes)
+class GrandChild2(Child):
+    pass
+
+
+gc1 = GrandChild1(10)
+gc2 = GrandChild2(12)
+
+print(gc1.eyes)
