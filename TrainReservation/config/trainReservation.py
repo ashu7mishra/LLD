@@ -1,11 +1,11 @@
-import threading
+import threading_module
 import random
 
 
 class TrainReservationSystem:
     def __init__(self, initial_seats):
         self.available_seats = initial_seats
-        self.lock = threading.RLock()  # Reentrant Lock
+        self.lock = threading_module.RLock()  # Reentrant Lock
 
     # TODO: Implement the reserve_seats method to reserve the seats of the desired seat_type
     def reserve_seats(self, seat_type, num_seats):
@@ -42,7 +42,7 @@ def concurrent_booking(reservation_system, num_threads, seats_per_thread):
     # Create and start multiple threads for concurrent booking
     for _ in range(num_threads):
         seat_type = random.choice(list(reservation_system.available_seats.keys()))
-        thread = threading.Thread(target=book_seats, args=(reservation_system, seat_type, seats_per_thread))
+        thread = threading_module.Thread(target=book_seats, args=(reservation_system, seat_type, seats_per_thread))
         threads.append(thread)
         thread.start()
 

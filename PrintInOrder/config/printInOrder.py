@@ -1,9 +1,9 @@
-import threading
+import threading_module
 
 
 class Foo:
     def __init__(self):
-        # self.semaphore_first = threading.Semaphore(1)
+        # self.semaphore_first = threading_module.Semaphore(1)
         # TODO : init the required semaphores
         # output will store the string values added by each function call
         self.output = []
@@ -35,7 +35,7 @@ foo = Foo()
 # Create threads for calling first(), second(), and third()
 threads = []
 for method in ["third", "second", "first"]:
-    thread = threading.Thread(target=worker_foo, args=(method, foo))
+    thread = threading_module.Thread(target=worker_foo, args=(method, foo))
     threads.append(thread)
     thread.start()
 

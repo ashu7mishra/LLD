@@ -1,15 +1,15 @@
-import threading
+import threading_module
 
 
-# Define the Adder class that inherits from threading.Thread
-class Adder(threading.Thread):
+# Define the Adder class that inherits from threading_module.Thread
+class Adder(threading_module.Thread):
     # TODO: Implement the logic to print "I am the Adder class"
     def __init__(self):
         super().__init__()
         print("I am the Adder class")
 
-# Define the Subtractor class that inherits from threading.Thread
-class Subtractor(threading.Thread):
+# Define the Subtractor class that inherits from threading_module.Thread
+class Subtractor(threading_module.Thread):
     # TODO: Implement the logic to print "I am the Subtractor class"
     def __init__(self):
         super().__init__()

@@ -1,11 +1,11 @@
-import threading
+import threading_module
 
 # TODO: Implement the methods of Counter class
 class Counter:
     def __init__(self, initial_count):
         # code here
         self._count = initial_count
-        self._lock = threading.Lock()
+        self._lock = threading_module.Lock()
 
     def incValue(self, offset):
         # TODO: method to increase the value of counter by `offset`
@@ -42,8 +42,8 @@ counter = Counter(10)
 # Create and start multiple threads for concurrent increment and decrement
 threads = []
 for _ in range(10):
-    thread_inc = threading.Thread(target=concurrent_inc, args=(counter, 1))
-    thread_dec = threading.Thread(target=concurrent_dec, args=(counter, 1))
+    thread_inc = threading_module.Thread(target=concurrent_inc, args=(counter, 1))
+    thread_dec = threading_module.Thread(target=concurrent_dec, args=(counter, 1))
     threads.append(thread_inc)
     threads.append(thread_dec)
     thread_inc.start()

@@ -1,11 +1,11 @@
-import threading
+import threading_module
 
 
 # Complete the implementation of the TableCreator class below
 
-class TableCreator(threading.Thread):
+class TableCreator(threading_module.Thread):
     def __init__(self, num):
-        # Initialize the threading.Thread superclass and set up any necessary attributes
+        # Initialize the threading_module.Thread superclass and set up any necessary attributes
         super().__init__()
         self.num = num
 
