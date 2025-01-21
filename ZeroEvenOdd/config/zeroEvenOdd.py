@@ -1,13 +1,13 @@
-import threading_module
+import threading_process
 
 
 class ZeroEvenOdd:
     def __init__(self, n):
         self.n = n
         # Initialize semaphores here
-        self.zero_sem = threading_module.Semaphore(1)
-        self.even_sem = threading_module.Semaphore(0)
-        self.odd_sem = threading_module.Semaphore(0)
+        self.zero_sem = threading_process.Semaphore(1)
+        self.even_sem = threading_process.Semaphore(0)
+        self.odd_sem = threading_process.Semaphore(0)
 
     def zero(self, printNumber):
         # TODO: Implement the method to print "0" followed by releasing either even_sem or odd_sem
@@ -29,8 +29,8 @@ def test_zero_even_odd():
     zeo = ZeroEvenOdd(n)
     pn = PrintNumber()
 
-    threads = [threading_module.Thread(target=zeo.zero, args=(pn,)), threading_module.Thread(target=zeo.even, args=(pn,)),
-               threading_module.Thread(target=zeo.odd, args=(pn,))]
+    threads = [threading_process.Thread(target=zeo.zero, args=(pn,)), threading_process.Thread(target=zeo.even, args=(pn,)),
+               threading_process.Thread(target=zeo.odd, args=(pn,))]
 
     for t in threads:
         t.start()

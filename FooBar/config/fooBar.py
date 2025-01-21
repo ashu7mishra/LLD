@@ -1,12 +1,12 @@
-import threading_module
+import threading_process
 
 
 class FooBar:
     def __init__(self, n):
         # TODO: Initialize semaphores here
         self.n = n
-        self.sem_foo = threading_module.Semaphore(1)
-        self.sem_bar = threading_module.Semaphore(0)
+        self.sem_foo = threading_process.Semaphore(1)
+        self.sem_bar = threading_process.Semaphore(0)
 
     def foo(self):
         # TODO: Implement synchronization to ensure "foo" is printed before "bar"
@@ -33,7 +33,7 @@ def test_foobar():
     def bar():
         fb.bar()
 
-    threads = [threading_module.Thread(target=foo), threading_module.Thread(target=bar)]
+    threads = [threading_process.Thread(target=foo), threading_process.Thread(target=bar)]
 
     for t in threads:
         t.start()

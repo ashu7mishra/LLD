@@ -1,11 +1,11 @@
-import threading_module
+import threading_process
 
 
 class MovieTicketBookingSystem:
     # TODO: Initialises lock,total seats and available seats for reservation
     def __init__(self, total_seats):
         self.total_seats = total_seats
-        self.lock = threading_module.RLock()
+        self.lock = threading_process.RLock()
         self.available_seats = total_seats
 
 

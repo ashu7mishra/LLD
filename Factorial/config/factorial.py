@@ -1,9 +1,9 @@
 import math
-import threading_module
+import threading_process
 
 
 # Todo: implement the factorial thread class
-class FactorialThread(threading_module.Thread):
+class FactorialThread(threading_process.Thread):
     # write code here
     def __init__(self, n):
         super().__init__()

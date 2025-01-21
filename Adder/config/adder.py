@@ -1,6 +1,6 @@
-import threading_module
+import threading_process
 
-class Adder(threading_module.Thread):
+class Adder(threading_process.Thread):
     # TODO: implement the constructor
     def __init__(self, num1, num2):
         self.num1 = num1
@@ -21,6 +21,6 @@ class Client:
         # TODO: create a thread of Adder class and add num1 and num2
 
         obj = Adder(num1, num2)
-        thread1 = threading_module.Thread(target=obj.run())
+        thread1 = threading_process.Thread(target=obj.run())
 
         thread1.start()
