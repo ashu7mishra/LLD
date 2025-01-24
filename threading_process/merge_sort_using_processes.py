@@ -45,7 +45,7 @@ def parallel_merge_sort(arr, maxWorkers):
     # left = arr[:mid]
     # right = arr[mid:]
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=maxWorkers) as executor:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=maxWorkers) as executor:
         left_future = executor.submit(merge_sort, arr)
         # right_future = executor.submit(merge_sort, right)
 
