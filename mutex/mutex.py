@@ -2,17 +2,23 @@ import threading
 
 shared_variable = 0
 
+mutex = threading.Lock()
+
 def adder():
     global shared_variable
     for i in range(1000000):
+        mutex.acquire()
         shared_variable += 1
+        mutex.release()
     # return shared_variable
 
 
 def subtractor():
     global shared_variable
     for i in range(1000000):
+        mutex.acquire()
         shared_variable -= 1
+        mutex.release()
     # return shared_variable
 
 
