@@ -22,4 +22,7 @@ class ComputerBuilder(ABC):
     @abstractmethod
     def set_power_supply(self, power_supply):
         pass
-    
+
+    @abstractmethod
+    def build(self):
+        pass
