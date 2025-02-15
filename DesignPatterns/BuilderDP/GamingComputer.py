@@ -4,6 +4,13 @@ from DesignPatterns.BuilderDP.computer import Computer
 
 class GamingComputerBuilder(ComputerBuilder):
 
+    def __init__(self):
+        self.ram = None
+        self.cpu = None
+        self.gpu = None
+        self.power_supply = 0
+        self.storage = 0
+
     def set_cpu(self, cpu):
         if cpu < 2:
             raise ValueError("CPU must be atleast 2")
