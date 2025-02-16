@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Button(ABC):
+class CheckBox(ABC):
 
     @abstractmethod
     def click(self):
