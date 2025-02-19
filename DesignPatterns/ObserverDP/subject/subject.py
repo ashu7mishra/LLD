@@ -1,4 +1,4 @@
-from DesignPatterns.ObserverDP.observer.observerABC import Observer
+from DesignPatterns.ObserverDP.observer.observer import Observer
 from DesignPatterns.ObserverDP.subject.subjectABC import SubjectABC
 
 
