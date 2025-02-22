@@ -5,20 +5,20 @@ paper pen and later on extend it to electronic pen as well.
 Paper-pen
 --------------
 Key features : 
--> It should support gel pen, ball pen and fountain pen.
--> gel pen and ball pens should have refill. 
--> fountain pen should have ink.
--> Refill have ink
--> different inks have different color
--> Every pen should have a brand, name and price
--> pen can be closed via cap or via click button
+-> It should support gel pen, ball pen and fountain pen. -> done
+-> gel pen and ball pens should have refill. -> done
+-> fountain pen should have ink. ->done
+-> Refill have ink - done
+-> different inks have different color - done
+-> Every pen should have a brand, name and price - done
+-> pen can be closed via cap or via click button -> done
 -> often nibs have different nib radius. Should we store radius of nibs -> yes
 -> Fountain pens itself have nibs.
 
 behaviours:
 -------------
--> Pen should be able to write
--> Pen should be able to open/close
+-> Pen should be able to write -> done
+-> Pen should be able to open/close -> done
 -> We should be able to refill pen
 
 
