@@ -1,0 +1,26 @@
+What is a Pen? -> Anything that writes.
+Should I consider all type of pens? Like that write on Paper, electronic pens -> Yes but focus more on 
+paper pen and later on extend it to electronic pen as well.
+
+Paper-pen
+--------------
+Key features : 
+-> It should support gel pen, ball pen and fountain pen.
+-> gel pen and ball pens should have refill. 
+-> fountain pen should have ink.
+-> Refill have ink
+-> different inks have different color
+-> Every pen should have a brand, name and price
+-> pen can be closed via cap or via click button
+-> often nibs have different nib radius. Should we store radius of nibs -> yes
+-> Fountain pens itself have nibs.
+
+behaviours:
+-------------
+-> Pen should be able to write
+-> Pen should be able to open/close
+-> We should be able to refill pen
+
+
+
+ 
