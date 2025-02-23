@@ -21,6 +21,6 @@ class Ink(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def get_color(self):
+    def get_density(self):
         raise NotImplementedError
 

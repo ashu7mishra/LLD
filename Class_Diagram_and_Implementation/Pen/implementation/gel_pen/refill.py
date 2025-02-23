@@ -18,7 +18,7 @@ class Refill(Ink):
     def get_color(self):
         return self._color
 
-    def get_color(self):
+    def get_density(self):
         return self._density
 
 

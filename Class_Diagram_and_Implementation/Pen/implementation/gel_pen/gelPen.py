@@ -1,11 +1,13 @@
 from Class_Diagram_and_Implementation.Pen.implementation.pen_abs.pen import Pen
 from Class_Diagram_and_Implementation.Pen.implementation.gel_pen.closingType import ClosingType
+from Class_Diagram_and_Implementation.Pen.implementation.gel_pen.refill import Refill
 
 
-class GelPen(Pen):
+class GelPen(Pen, Refill):
 
-    def __init__(self, name: str, brand: str, price: int):
-        super().__init__("Gel Pen", name, brand, price)
+    def __init__(self, name: str, brand: str, price: int, color: str, density: float):
+        Pen.__init__(self, "Gel Pen", name, brand, price)
+        Refill.__init__(self, color, density)
         self._closingType = ClosingType.CAP
 
     def write(self):
@@ -53,4 +55,4 @@ class GelPen(Pen):
 
     def get_closing_type(self):
         # raise NotImplementedError
-        return self._closingType
+        return self._closingType.value
