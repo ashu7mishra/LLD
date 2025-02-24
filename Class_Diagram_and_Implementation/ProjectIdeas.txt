@@ -1,0 +1,34 @@
+1. Cache Management System
+Data Structures: Hash Map, Doubly Linked List
+Design Pattern: Singleton, Factory, Strategy
+Description: Implement a Least Recently Used (LRU) or Least Frequently Used (LFU) cache system. Use the Singleton pattern to ensure a single cache instance, Factory to create different cache strategies, and Strategy to switch between LRU/LFU policies.
+
+2. Task Scheduler
+Data Structures: Priority Queue (Heap), Graph (for dependencies)
+Design Pattern: Observer, Command, Builder
+Description: Build a task scheduler where tasks can have dependencies (DAG-based scheduling). Use the Observer pattern to notify workers of new tasks, Command to encapsulate tasks, and Builder to construct complex task flows.
+
+3. Custom In-Memory Database
+Data Structures: Hash Table, B-Tree, Trie
+Design Pattern: Prototype, Memento, Flyweight
+Description: Create a simple key-value store that supports transactions and rollback (using the Memento pattern). Use Prototype to clone objects efficiently and Flyweight to optimize memory usage for frequently accessed keys.
+
+4. Load Balancer
+Data Structures: Circular Queue, Hash Map
+Design Pattern: Singleton, Factory, Strategy
+Description: Design a load balancer that distributes incoming requests to servers using different load-balancing strategies (Round Robin, Least Connections). The Strategy pattern helps switch between different algorithms dynamically.
+
+5. Event-Driven Notification System
+Data Structures: Queue, Hash Map
+Design Pattern: Observer, Publisher-Subscriber, Factory
+Description: Implement an event-driven notification system where users receive messages based on event subscriptions. Use the Observer pattern for event listeners and Factory to create different types of notifications (email, SMS, push).
+
+6. Graph-Based Route Planner (Dijkstra/A)*
+Data Structures: Graph (Adjacency List/Matrix), Priority Queue
+Design Pattern: Strategy, Factory, Template Method
+Description: Implement a route-finding algorithm (like Dijkstra’s or A*). Use the Strategy pattern to switch between different pathfinding algorithms and Template Method to define a reusable search framework.
+
+7. Multithreaded Job Queue System
+Data Structures: Queue, Heap (Priority Queue)
+Design Pattern: Producer-Consumer, Command, Singleton
+Description: Develop a job queue where multiple producers submit jobs and multiple workers process them concurrently. Use Command to encapsulate jobs, Singleton to manage the queue, and Producer-Consumer for handling concurrent job execution.
