@@ -1,3 +1,4 @@
+from Class_Diagram_and_Implementation.CallCenter.Implementation.Employee.call_state import CallState
 from Class_Diagram_and_Implementation.CallCenter.Implementation.Employee.employee import Employee
 from Class_Diagram_and_Implementation.CallCenter.Implementation.Employee.employee_type import EmployeeType
 from enum import Enum
@@ -6,14 +7,16 @@ from abc import ABC, abstractmethod
 
 class Operator(Employee):
 
-    def __init__(self, employee_id: str, employee_type: Enum, employee_name: str,
-                 employee_gender: str, employee_age: int, call_state: Enum):
-        super().__init__(self, employee_id, employee_name, employee_gender, employee_age)
+    def __init__(self, employee_id: str, employee_name: str):
+        super().__init__(self, employee_id, employee_name)
         self._employee_type = EmployeeType.Operator
 
-    @abstractmethod
-    def call_handle(self):
-        raise NotImplementedError
+    def take_call(self, call):
+        """Assume the employee will always successfully take the call"""
+        self._call = call
+        self._call_state = CallState.INPROGRESS
+        self._employee_type = self
+        self._employee = None
 
     @abstractmethod
     def escalate_call(self):
@@ -26,14 +29,6 @@ class Operator(Employee):
     @abstractmethod
     def set_employee_name(self, employee_name):
         self._employee_name = employee_name
-
-    @abstractmethod
-    def set_employee_age(self, employee_age):
-        self._employee_age = employee_age
-
-    @abstractmethod
-    def set_employee_gender(self, employee_gender):
-        self._employee_gender = employee_gender
 
     @abstractmethod
     def set_employee_type(self, employee_type):
