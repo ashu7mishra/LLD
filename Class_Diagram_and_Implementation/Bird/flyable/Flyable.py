@@ -1,7 +1,9 @@
-from abc import ABC, abstractmethod
+from abc import abstractmethod
+
+from bird.Bird import Bird
 
 
-class Flyable(ABC):
+class Flyable(Bird):
 
     @abstractmethod
     def fly(self):

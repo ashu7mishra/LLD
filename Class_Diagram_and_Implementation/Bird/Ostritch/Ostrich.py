@@ -1,13 +1,13 @@
-from bird_abs.BirdAbs import Bird
+from Ostritch.dont_fly import DontFly
 
 
-class Ostritch(Bird):
+class Ostrich(DontFly):
 
     def eat(self):
-        return "Ostritch eats weeds"
+        return "Ostrich eats weeds"
 
     def make_sound(self):
-        return "Ostritch sounds like trr trr"
+        return "Ostrich sounds like trr trr"
 
     def set_name(self, name):
         self._name = name
@@ -28,15 +28,17 @@ class Ostritch(Bird):
         return self._height
 
     def set_weight(self, weight):
-        raise NotImplementedError
+        self._weight = weight
 
     def get_weight(self):
-        raise NotImplementedError
+        return self._weight
 
-    def set_wings(self, name):
-        raise NotImplementedError
+    def set_wings(self, wings):
+        self._wings = wings
 
     def get_wings(self):
-        raise NotImplementedError
+        return self._wings
+
+
 
 
