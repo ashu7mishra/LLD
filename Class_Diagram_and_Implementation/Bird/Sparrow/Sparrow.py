@@ -1,7 +1,7 @@
-from Sparrow.fly import Fly
+from flyable.Flyable import Flyable
 
 
-class Sparrow(Fly):
+class Sparrow(Flyable):
 
     def eat(self):
         return "Sparrow eats small insects"
@@ -38,3 +38,9 @@ class Sparrow(Fly):
 
     def get_wings(self):
         return self._wings
+
+    def fly(self):
+        return "Sparrow can fly"
+
+    def move(self):
+        return "Sparrow moves slow but can fly fast"

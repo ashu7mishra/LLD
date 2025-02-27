@@ -1,7 +1,7 @@
-from Ostritch.dont_fly import DontFly
+from non_flyable.NonFlyable import NonFlyable
 
 
-class Ostrich(DontFly):
+class Ostrich(NonFlyable):
 
     def eat(self):
         return "Ostrich eats weeds"
@@ -38,6 +38,12 @@ class Ostrich(DontFly):
 
     def get_wings(self):
         return self._wings
+
+    def run(self):
+        return "Ostrich don't fly. They run"
+
+    def move(self):
+        return "Ostrich move fast"
 
 
 
