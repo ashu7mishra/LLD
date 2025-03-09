@@ -1,7 +1,7 @@
-from Class_Diagram_and_Implementation.LoadBalancer.LoadBalancingStrategy.LoadBalancingStrategy import LoadBalancingStrategy
+from LoadBalancer.LoadBalancingStrategy.LoadBalancingStrategy import LoadBalancerStrategy
 
 
-class RoundRobinStrategy(LoadBalancingStrategy):
+class RoundRobinStrategy(LoadBalancerStrategy):
 
     def __init__(self):
         self.index = 0

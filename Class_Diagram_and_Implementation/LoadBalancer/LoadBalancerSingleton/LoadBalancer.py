@@ -25,6 +25,6 @@ class LoadBalancer:
         if not LoadBalancer._isInstance.servers:
             print("No servers available")
 
-        selected_server = LoadBalancer._isInstance.strategy(LoadBalancer._isInstance.servers)
+        selected_server = LoadBalancer._isInstance.strategy.select_server(LoadBalancer._isInstance.servers)
         selected_server.handle_request(request)
 
